@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Nunito", sans-serif;
 }
 body{
     background-color: #13131F;
@@ -50,6 +53,7 @@ h1{
 
 .titulos{
     padding-bottom: 30px;
+    font-size: 30px;
 }
 .titulos h1{
     padding-bottom: 20px;
@@ -62,9 +66,29 @@ span{
     padding: 5px;
     border-radius: 10px;
     border: none;
-    background-color: #8257E6;
     color: #fff;
+    font-size: 15px;
 }
+#b1{
+    background-color: #8257E6;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+#b1:hover{
+    transform: scale(1.2);
+}
+#b2{
+    background-color: rgba(15, 15, 15, 0.5);
+    border: 1px solid #8257E6;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin-left: 20px;
+}
+#b2:hover{
+    transform: scale(1.2);
+}
+
+
 /*Contrução sobre mim*/
 .sobre{
     width: 70%;
