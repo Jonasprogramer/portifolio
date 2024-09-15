@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #13131F;
+    color: white;
+}
+
+
+/*Construção do menu*/
+.menu-container{
+    border-bottom-style: solid;
+    border-color: #8257E6;
+
+}
+.itens{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+h1{
+    color: #fff;
+}
+
+/*Construção sessão apresentação*/
+.apresentacao{
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: nowrap;
+    */
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.foto{
+    background-color: #0A1C4E;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.foto:hover{
+    transform: scale(1.2);
+}
+
+.titulos{
+    padding-bottom: 30px;
+}
+.titulos h1{
+    padding-bottom: 20px;
+}
+span{
+    color:#8257E6 ;
+}
+
+.buttons button{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #8257E6;
+    color: #fff;
+}
+/*Contrução sobre mim*/
+.sobre{
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+}
+h2{
+    text-align: center;
+    border-bottom-style: solid; 
+    border-bottom-color: #8257E6;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.about{
+    padding-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+
+
+footer{
+    text-align: center;
+    border-top: 2px solid #8257E6;
+    padding: 20px;
+}
