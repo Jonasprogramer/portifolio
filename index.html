@@ -21,8 +21,9 @@
     <section class="apresentacao">
         <div class="txt">
             <div class="titulos">
-                <h1>Olá, eu sou o <br> <span>Jonas Miqueias :)</span></h1>
-            <p>Desenvolvedor Front-End</p>
+                <h1 id="ola">Olá, eu sou o </h1>
+                <h1><span id="nome">Jonas Miqueias :)</span></h1>
+                <p id="profissao">Desenvolvedor Front-End</p>
             </div>
             
 
@@ -54,5 +55,30 @@
     <footer>
         <p>Jonas Miqueias <br> &copy; direitos reservados </p>
     </footer>
+
+    <script>
+        const nome = document.getElementById('nome');
+        const profissao = document.getElementById('profissao');
+        const ola = document.getElementById('ola');
+      
+        function typeWriter(elemento) {
+          const texto = elemento.textContent;
+          elemento.textContent = '';
+      
+          let i = 0;
+          function adicionarLetra() {
+            elemento.textContent += texto.charAt(i);
+            i++;
+            if (i < texto.length) {
+              setTimeout(adicionarLetra, 100); // Ajuste o tempo aqui para controlar a velocidade da digitação
+            }
+          }
+          adicionarLetra();
+        }
+      
+        typeWriter(nome);
+        typeWriter(profissao);
+        typeWriter(ola)
+      </script>
 </body>
 </html>
