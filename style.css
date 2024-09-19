@@ -13,9 +13,12 @@ body{
 
 /*Construção do menu*/
 .menu-container{
+    background-color: #13131F;
     border-bottom-style: solid;
     border-color: #8257E6;
-
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .itens{
     display: flex;
@@ -156,7 +159,33 @@ h2{
 }
 
 
-
+/*Habilidades*/
+.habilidade{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.skills{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.linguagem{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+    text-align: center;
+    background-color: #212121;
+    border-radius: 10px 0px 0px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid #8257E6;
+    padding: 20px;
+}
 
 footer{
     text-align: center;
